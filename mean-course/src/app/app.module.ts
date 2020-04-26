@@ -9,18 +9,21 @@ import { FormsModule } from '@angular/forms';
 import { MatInputModule} from '@angular/material/input';
 import { MatCardModule} from '@angular/material/card';
 import {MatButtonModule } from '@angular/material/button';
+import {MatToolbarModule } from '@angular/material/toolbar';
+import {HeaderComponent } from './header/header.component';
 
 
 @NgModule({
   declarations: [AppComponent,
-    PostCreateComponent],
+    PostCreateComponent, HeaderComponent],
   imports: [BrowserModule,
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
     MatInputModule,
     MatCardModule,
-    MatButtonModule],
+    MatButtonModule,
+    MatToolbarModule],
   providers: [],
   bootstrap: [AppComponent],
 })
